@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The ultimate comprehensive guide to HTML covering all elements, attributes, and concepts.">
+    <meta name="keywords" content="HTML, HTML5, Web Development, HTML Guide, HTML Elements">
+    <meta property="og:title" content="Ultimate HTML Guide">
+    <meta property="og:description" content="Learn everything about HTML with this ultimate guide.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ultimate HTML Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ultimate HTML Guide</h1>
+        <p>Everything you need to know about HTML in one place.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <a href="#basic-structure">Basic Structure</a>
+        <a href="#text-elements">Text Elements</a>
+        <a href="#links">Links</a>
+        <a href="#lists">Lists</a>
+        <a href="#forms">Forms</a>
+        <a href="#tables">Tables</a>
+        <a href="#media">Media</a>
+        <a href="#semantic-html">Semantic HTML</a>
+        <a href="#input-types">Form Input Types</a>
+        <a href="#file-upload">File Upload</a>
+        <a href="#iframe">Iframe</a>
+        <a href="#custom-elements">Custom Elements</a>
+        <a href="#global-attributes">Global Attributes</a>
+        <a href="#metadata">Metadata</a>
+        <a href="#less-common-elements">Less Common Elements</a>
+        <a href="#advanced-forms">Advanced Forms</a>
+        <a href="#interactive-elements">Interactive Elements</a>
+        <a href="#embedded-content">Embedded Content</a>
+        <a href="#scripting">Scripting</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Basic Structure Section -->
+        <section id="basic-structure">
+            <h2>Basic Structure</h2>
+            <p>Every HTML document starts with a basic structure:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </section>
+
+        <!-- Text Elements Section -->
+        <section id="text-elements">
+            <h2>Text Elements</h2>
+            <p>Common text elements include:</p>
+            <p><strong>Bold text</strong>, <em>italic text</em>, <u>underlined text</u>, <s>strikethrough text</s>, and <code>inline code</code>.</p>
+            <p>Headings:</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </section>
+
+        <!-- Links Section -->
+        <section id="links">
+            <h2>Links</h2>
+            <p>Anchor tags (<code>&lt;a&gt;</code>) are used for links:</p>
+            <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">Visit Example.com</a></p>
+            <p><a href="mailto:someone@example.com">Send Email</a></p>
+        </section>
+
+        <!-- Lists Section -->
+        <section id="lists">
+            <h2>Lists</h2>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+            <h3>Definition List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <!-- Forms Section -->
+        <section id="forms">
+            <h2>Forms</h2>
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required>
+                
+                <label for="terms">Accept Terms:</label>
+                <input type="checkbox" id="terms" name="terms">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="tables">
+            <h2>Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Media</h2>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audiofile.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h3>Video</h3>
+            <video controls>
+                <source src="videofile.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Image</h3>
+            <img src="image.jpg" alt="Sample Image" width="300">
+        </section>
+
+        <!-- Semantic HTML Section -->
+        <section id="semantic-html">
+            <h2>Semantic HTML</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>Content of the article goes here.</p>
+            </article>
+            <section>
+                <h3>Section Title</h3>
+                <p>Content of the section goes here.</p>
+            </section>
+            <aside>
+                <h3>Aside Title</h3>
+                <p>Content of the aside goes here.</p>
+            </aside>
+        </section>
+
+        <!-- Form Input Types Section -->
+        <section id="input-types">
+            <h2>Form Input Types</h2>
+            <form>
+                <input type="text" placeholder="Text input">
+                <input type="password" placeholder="Password">
+                <input type="email" placeholder="Email address">
+                <input type="tel" placeholder="Phone number">
+                <input type="url" placeholder="Website URL">
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                <input type="range" min="1" max="100" value="50">
+                <input type="date">
+                <input type="time">
+            </form>
+        </section>
+
+        <!-- File Upload Section -->
+        <section id="file-upload">
+            <h2>File Upload</h2>
+            <form>
+                <input type="file" id="file-upload">
+            </form>
+        </section>
+
+        <!-- Iframe Section -->
+        <section id="iframe">
+            <h2>Iframe</h2>
+            <iframe src="https://www.example.com" width="600" height="400"></iframe>
+        </section>
+
+        <!-- Custom Elements Section -->
+        <section id="custom-elements">
+            <h2>Custom Elements</h2>
+            <div data-user="123">User Information</div>
+            <p>HTML entities: &amp; &lt; &gt; &copy;</p>
+        </section>
+
+        <!-- Global Attributes Section -->
+        <section id="global-attributes">
+            <h2>Global Attributes</h2>
+            <p>Global attributes can be used on any HTML element:</p>
+            <ul>
+                <li><code>class</code>: Defines one or more class names.</li>
+                <li><code>id</code>: Defines a unique ID.</li>
+                <li><code>style</code>: Defines inline CSS.</li>
+                <li><code>title</code>: Defines extra information (tooltip).</li>
+                <li><code>data-*</code>: Used to store custom data.</li>
+                <li><code>contenteditable</code>: Makes an element editable.</li>
+                <li><code>draggable</code>: Makes an element draggable.</li>
+                <li><code>hidden</code>: Hides an element.</li>
+            </ul>
+        </section>
+
+        <!-- Metadata Section -->
+        <section id="metadata">
+            <h2>Metadata</h2>
+            <p>Metadata provides information about the HTML document:</p>
+            <pre><code>
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="A page about HTML"&gt;
+&lt;meta name="keywords" content="HTML, Web Development"&gt;
+&lt;meta name="author" content="Your Name"&gt;
+&lt;meta http-equiv="refresh" content="5"&gt;
+&lt;base href="https://example.com/"&gt;
+&lt;link rel="preload" href="image.jpg" as="image"&gt;
+            </code></pre>
+        </section>
+
+        <!-- Less Common Elements Section -->
+        <section id="less-common-elements">
+            <h2>Less Common Elements</h2>
+            <h3>&lt;figure&gt; and &lt;figcaption&gt;</h3>
+            <figure>
+                <img src="image.jpg" alt="Sample Image">
+                <figcaption>This is a sample image.</figcaption>
+            </figure>
+            <h3>&lt;details&gt; and &lt;summary&gt;</h3>
+            <details>
+                <summary>Click to expand</summary>
+                <p>Hidden content revealed!</p>
+            </details>
+            <h3>&lt;time&gt;</h3>
+            <p>The event is on <time datetime="2023-10-01">October 1, 2023</time>.</p>
+            <h3>&lt;mark&gt;</h3>
+            <p>This is <mark>highlighted</mark> text.</p>
+        </section>
+
+        <!-- Advanced Forms Section -->
+        <section id="advanced-forms">
+            <h2>Advanced Forms</h2>
+            <h3>&lt;textarea&gt;</h3>
+            <textarea rows="4" cols="50">Enter your message here.</textarea>
+            <h3>&lt;select&gt; and &lt;option&gt;</h3>
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+            <h3>&lt;datalist&gt;</h3>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+            </datalist>
+            <h3>&lt;fieldset&gt; and &lt;legend&gt;</h3>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </fieldset>
+            <h3>&lt;output&gt;</h3>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="number" id="a" value="10"> +
+                <input type="number" id="b" value="20"> =
+                <output name="result" for="a b">30</output>
+            </form>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            <h3>&lt;dialog&gt;</h3>
+            <dialog open>
+                <p>This is a dialog box.</p>
+                <button onclick="this.parentElement.close()">Close</button>
+            </dialog>
+            <h3>&lt;menu&gt;</h3>
+            <menu>
+                <li>Option 1</li>
+                <li>Option 2</li>
+            </menu>
+        </section>
+
+        <!-- Embedded Content Section -->
+        <section id="embedded-content">
+            <h2>Embedded Content</h2>
+            <h3>&lt;canvas&gt;</h3>
+            <canvas id="myCanvas" width="200" height="100"></canvas>
+            <script>
+                const canvas = document.getElementById('myCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'red';
+                ctx.fillRect(10, 10, 100, 50);
+            </script>
+            <h3>&lt;svg&gt;</h3>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+            <h3>&lt;picture&gt;</h3>
+            <picture>
+                <source srcset="image-large.jpg" media="(min-width: 800px)">
+                <img src="image-small.jpg" alt="Sample Image">
+            </picture>
+            <h3>&lt;track&gt;</h3>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+            </video>
+        </section>
+
+        <!-- Scripting Section -->
+        <section id="scripting">
+            <h2>Scripting</h2>
+            <h3>&lt;noscript&gt;</h3>
+            <noscript>
+                <p>Please enable JavaScript to view this page.</p>
+            </noscript>
+            <h3>&lt;template&gt;</h3>
+            <template id="myTemplate">
+                <p>This is a template.</p>
+            </template>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
